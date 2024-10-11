@@ -1,0 +1,47 @@
+{
+  "name": "npeapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'src/server.js'",
+    "prettier": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "build": "npx tsc",
+    "jasmine": "jasmine",
+    "test": "npm run build && npm run jasmine",
+    "start": "nodemon src/server.ts"
+  },
+  "keywords": [],
+  "author": "Harsh Vyas",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jasmine": "^5.1.4",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^22.5.4",
+    "@types/pg": "^8.11.10",
+    "@types/sharp": "^0.31.1",
+    "@types/supertest": "^6.0.2",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "nodemon": "^3.1.4",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "db-migrate": "^0.11.14",
+    "db-migrate-pg": "^1.5.2",
+    "express": "^4.21.0",
+    "jasmine": "^5.3.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "lodash": "^4.17.21",
+    "pg": "^8.13.0",
+    "sharp": "^0.33.5",
+    "supertest": "^7.0.0"
+  }
+}
