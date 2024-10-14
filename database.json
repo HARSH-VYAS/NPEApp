@@ -7,7 +7,6 @@
       "password": {"ENV":"POSTGRES_PASWD"}
     },
 
-    
     "dev_db2": {
       "driver": "pg",
       "host": {"ENV":"POSTGRES_HOST"},
